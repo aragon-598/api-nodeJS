@@ -13,6 +13,8 @@ app.get("/",(req,res)=>{
     res.json({mensaje:"Hola mundo del API en nodejs"});
 });
 
+require("./app/routes/cliente.routes.js")(app)
+
 app.listen(3000, () =>{
     console.log("Server running in port 3000");
 });
